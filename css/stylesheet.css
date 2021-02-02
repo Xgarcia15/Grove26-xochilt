@@ -1,0 +1,115 @@
+/*GRID CONTAINER*/
+#item-1 {grid-area: article;}
+#item-2 {grid-area: article;}
+#item-3 {grid-area: article;}
+#item-4 {grid-area: article;}
+#item-6 {grid-area: aside;}
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "article article"
+    "aside asise"
+    "footer footer";
+  grid-template-columns: 52% 1fr 10%;
+  height: 100vh;
+  margin: 0;
+}
+
+/*HEADER and NAVIGATION*/
+header {
+  background-color: #150300;
+  height: 50px;
+  overflow: hidden;
+}
+
+nav {
+    padding-right: 35px; 
+}
+.nav-item {
+  float: right;
+  font-size: small;
+  color: lightgrey;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+  letter-spacing: 1.1px;
+  line-height: 2;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.site-title {
+  float: left;
+  font-size: 19px;
+  color: rgb(223, 223, 223);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 0.3;
+  text-decoration: underline;
+  padding-left: 70px;
+}
+
+/* BODY | main-title, paragraph, photo */
+.main-title {
+  padding-top: 60px;
+}
+
+/* 'DISCOVER' font-family, color, text-align */
+.discover {
+  font-family: "Marck Script", cursive;
+  color: peru;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 45px;
+  line-height: 1.2;
+}
+
+.our-story {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 45px;
+  line-height: 0.2;
+}
+
+.paragraph {
+  text-align: center;
+  display: block;
+  line-height: 1.5;
+}
+
+.paragraph-1 {
+  font-size: x-large;
+  color: rgb(82, 81, 81);
+  font-family: "Dosis", sans-serif;
+  padding-right: 100px;
+  margin-left: 19%;
+}
+
+.photo {
+  float: right;
+  vertical-align: middle;
+  padding-top: 90px;
+}
+
+.about-us {
+  color: peru;
+  float: right;
+  font-family: 'Montserrat', sans-serif;
+}
+
+aside{
+    margin-right: 42%;
+}
+
+/*FOOTER | COPYRIGHTS*/
+footer {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+    color: rgb(82, 81, 81);
+}
