@@ -1,15 +1,15 @@
 /*GRID CONTAINER*/
-#item-1 {grid-area: article;}
-#item-2 {grid-area: article;}
-#item-3 {grid-area: article;}
-#item-4 {grid-area: article;}
+#item-1 {grid-area: main;}
+#item-2 {grid-area: main;}
+#item-3 {grid-area: main;}
+#item-4 {grid-area: main;}
 #item-6 {grid-area: aside;}
 
 
 .grid-container {
   display: grid;
   grid-template-areas:
-    "article article"
+    "main main"
     "aside asise"
     "footer footer";
   grid-template-columns: 52% 1fr 10%;
@@ -27,15 +27,26 @@ header {
 nav {
     padding-right: 35px; 
 }
-.nav-item {
+
+li a {
   float: right;
+  text-align: center;
+  padding:10px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.nav-item {
   font-size: small;
+  line-height: 2.0;
   color: lightgrey;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: lighter;
-  letter-spacing: 1.1px;
-  line-height: 2;
-  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   padding: 10px;
@@ -108,8 +119,18 @@ aside{
 }
 
 /*FOOTER | COPYRIGHTS*/
-footer {
+.copyright {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: small;
-    color: rgb(82, 81, 81);
+    color: white;
+    font-weight: lighter;
+    text-align: center;
+    font-size: smaller;
+    line-height: 1.0;
+}
+
+footer {
+  background-color: #242426;
+  height: 45px;
+  overflow: hidden;
 }
